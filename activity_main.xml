@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Parent Vertical LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Horizontal Layout for Title, Dark Mode Switch, and Gear Icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Title TextView -->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/loan_calculator"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:id="@+id/settingsButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/settings_description"
+                android:src="@drawable/gear_icon" />
+        </LinearLayout>
+
+        <!-- RadioGroup for Loan Options -->
+        <RadioGroup
+            android:id="@+id/loanTypeGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/houseLoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/house_loan"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/carLoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/car_loan"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mortgageLoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mortgage_loan"
+                android:padding="15dp"/>
+        </RadioGroup>
+
+        <!-- Input Fields -->
+        <EditText
+            android:id="@+id/principalInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/principal_hint"
+            android:minHeight="48dp"
+            android:importantForAutofill="yes"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/interestRateInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/interest_hint"
+            android:minHeight="48dp"
+            android:importantForAutofill="yes"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/termInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/term_hint"
+            android:minHeight="48dp"
+            android:importantForAutofill="yes"
+            android:inputType="number"/>
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"/>
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/results_here"
+            android:paddingTop="16dp"/>
+
+        <Button
+            android:id="@+id/printReceiptButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/print_receipt"/>
+    </LinearLayout>
+</ScrollView>

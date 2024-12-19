@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LoanCalculatorAmortizationApp</string>
+    <string name="loan_calculator">Loan Calculator</string>
+    <string name="house_loan">House Loan</string>
+    <string name="car_loan">Car Loan</string>
+    <string name="mortgage_loan">Mortgage Loan</string>
+    <string name="calculate">Calculate</string>
+    <string name="print_receipt">Print Receipt</string>
+    <string name="principal_hint">Principal Amount</string>
+    <string name="interest_hint">Interest Rate (%)</string>
+    <string name="term_hint">Loan Term (in Years)</string>
+    <string name="results_here">Results will appear here</string>
+    <string name="settings_description">Settings</string>
+</resources>
