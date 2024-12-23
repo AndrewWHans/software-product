@@ -4,6 +4,6 @@
   <body>
   <head>Project for the CSCI - C308 class: SYSTEM ANALYSIS AND DESIGN</head>
   <p>Presenting: Calculation App</p>
-  <p>Documentation: </p>
+  <p></p>
   </body>
 </html>
